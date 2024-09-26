@@ -1,0 +1,208 @@
+
+/* 
+justify-content is for aligning boxes horizontally in the center
+align-items is for aligning boxes verticlaly in the center
+*/
+
+body {
+    background-color: #705C53;
+
+}
+
+.main-flex-box > div {
+    width: 3rem;
+    margin: 1.5rem;
+    height: 2rem;
+    padding: 1.5rem;
+    background-color: orange;
+    text-align: auto;
+
+
+    /* Flex box in child divs to center text. */
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+#basic {
+    background-color: #324324;
+    display: flex;
+    justify-content: center;
+
+}
+
+#row-reverse {
+    background-color: #324324;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+#column {
+    width: 50%;
+    background-color: #324324;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#column-reverse {
+    width: 50%;
+    background-color: #324324;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+#flex-flow {
+    background-color: #324324;
+    display: flex;
+    max-height: 350px;
+    flex-flow: column wrap;
+
+}
+
+/* Creation of special flexbox showing centering */
+
+
+#special {
+    width: 100%;
+    background-color: #324324;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+}
+
+#special > div{
+    height: 200px;
+    width: 200px;
+    background: rgb(131, 125, 138);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+/* Creation of pseudo-transition experiments bar */
+
+
+#reactive {
+    background-color: #324324;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+/* changes the main color of the main container when hovered over */
+#reactive:hover {
+    background-color: gold;
+}
+
+/* changes all the child divs of the main container when hovered */
+#reactive:hover > div{
+    background-color: silver;
+    flex: 2;
+    font-size: 2rem;
+    transition: 2s;
+    transition-duration: 0.5s;
+}
+
+/* Selects the first div element (paris) whilst hovered */
+#reactive:hover > div:nth-child(1){
+    background-color: #F8E3D0;
+    color: #4B3C29;
+}
+
+/* Selects the second div element (chicago) */
+#reactive:hover > div:nth-child(2){
+    background-color: #A3C1DA;
+    color: #2D2A29;
+}
+
+/* Selects the third div element (tokyo) */
+#reactive:hover > div:nth-child(3){
+    background-color: #FFB3B3;
+    color: #333333;
+}
+
+/* Selects the fourth div element (athens) */
+#reactive:hover > div:nth-child(4){
+    background-color: #F5E8C7;
+    color: #6A4E4B; 
+}
+
+/* Selects the fifth div element (berlin) */
+#reactive:hover > div:nth-child(5){
+    background-color: #B2AC88;
+    color: #1C1C1C;
+}
+
+/* List creation */
+
+
+/* Selects all even elements in the list to change */
+li:nth-child(odd){
+    background-color: violet;
+    color: lavender;
+}
+
+/* Selects all odd elements in the list to change */
+li:hover {
+    background-color: green;
+    color: blue;
+}
+
+
+
+/* Creation of Navigation Bar */
+
+nav {
+    display: flex;
+}
+
+nav > div{
+    width: 25%;
+    height: 3rem;
+    background-color: rgb(130, 130, 250);
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.buttons:hover:nth-child(even) {
+    background-color: #ebe4c2;
+    font-weight: bold;
+    color: rgb(39, 165, 66);
+    flex: 33%;
+    font-size: 2rem;
+    transition: 0.2s;
+}
+
+.buttons:hover:nth-child(odd) {
+    background-color: #ebe4c2;
+    font-weight: bold;
+    color: orangered;
+    flex: 33%;
+    font-size: 2rem;
+    transition: 0.2s;
+}
+
+
+/* Changes the color of all highlighted/selected text that are within divs within the highlighted portion*/
+div::selection {
+    color: red;
+    background-color: yellow;
+}
+
+h2 {
+    text-decoration: underline;
+}

@@ -1,0 +1,17 @@
+flexbox elements used:
+display: flex; - creates the flexbox itself
+
+flex-direction - changes the direction/order the elements in the flexbox are organized
+flex-flow - changes the way how the elements are displayed, breaking into several columns or rows.
+
+
+
+
+
+pseudo=elements used:
+
+:hover - Applies to the current element being hovered by the cursor
+:selection - Applies styling to the currently highlighted cursor content
+:nth-child(even) - Selects all even elements to apply the style
+:nth-child(odd) - Selects all odd elements to apply the style
+:nth-child(x) - Selects the x element (1, 2, 3, etc) to apply the style
